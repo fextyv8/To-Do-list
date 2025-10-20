@@ -5,14 +5,21 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1 id="title">To-Do List</h1>
-        <p><input class="add" id="taskAddInput" type="text" 
-        placeholder="Write a task to add">
-        <button class="add" id="addTask">Add task</button></p>
-        <p><input class="delete" id="taskDeleteInput" type="text" 
-        placeholder="Write a task to delete">
-        <button class="delete" id="deleteTask">Delete task</button></p>
-        <ul id="list"></ul>
+        <h1>To-do List</h1>
+        <div id="options">
+            <button id="modeBtn">Modo oscuro/claro</button>
+            <button id="downloadBtn">Descargar app</button>
+        </div>
+        <div id="add">
+            <input type="text" id="taskName" placeholder="Tarea a agregar">
+            <input type="time" id="taskTime">
+            <button id="addBtn">Agregar tarea</button>
+        </div>
+        <div id="delete">
+            <input type="text" id="deleteName" placeholder="Tarea a eliminar">
+            <button id="deleteBtn">Eliminar tarea</button>
+        </div>
+        <ul id="taskList"></ul>
         <script src="script.js"></script>
     </body>
 </html>
