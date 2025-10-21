@@ -44,7 +44,8 @@ function addTask(name, time) {
             LI.style.opacity = '0.6';
             COMPLETE_SOUND.play();
             showConfetti();
-        } else {
+        } 
+        else {
             STATUS.textContent = '(incomplete)';
             LI.style.textDecoration = 'none';
             LI.style.opacity = '1';
@@ -115,7 +116,8 @@ document.addEventListener("DOMContentLoaded", () => {
     if (SAVEDMODE === 'true') {
         document.body.classList.add('dark-mode');
         MODE.textContent = 'Modo claro';
-    } else {
+    } 
+    else {
         MODE.textContent = 'Modo oscuro';
     }
 
@@ -176,10 +178,16 @@ setInterval(() => {
         const status = item.querySelector('.statusLabel').textContent;
 
         if (hour === CURRENT_TIME && status === '(incomplete)') {
-            sendNotification(name, hour);
+            if (window.pywebview) {
+                window.pywebview.api.notificar_tarea(name, hour);
+            } 
+            else {
+            notification(name, hour);
+            }
         }
+
     });
-}, 60000);
+}, 10000);
 
 // Download .exe
 document.getElementById('downloadBtn').addEventListener('click', () => {
