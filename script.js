@@ -7,9 +7,9 @@ const DELETE = document.getElementById('deleteBtn');
 const DELETEINPUT = document.getElementById('deleteName');
 
 // Local sounds
-const ADD_SOUND = new Audio("https://fextyv8.github.io/To-Do-list/sounds/add.mp3");
-const DELETE_SOUND = new Audio("https://fextyv8.github.io/To-Do-list/sounds/delete.mp3");
-const COMPLETE_SOUND = new Audio("https://fextyv8.github.io/To-Do-list/sounds/completed.mp3");
+const ADD_SOUND = new Audio("sounds/add.mp3");
+const DELETE_SOUND = new Audio("sounds/delete.mp3");
+const COMPLETE_SOUND = new Audio("sounds/completed.mp3");
 
 // Add task
 function addTask(name, time) {
