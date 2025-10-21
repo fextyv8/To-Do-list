@@ -130,8 +130,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 document.getElementById('downloadBtn').addEventListener('click', () => {
     const link = document.createElement('a');
-    link.href = 'To-Do List.exe';
-    link.download = 'To-Do List.exe';
+    link.href = 'To-Do-List.exe';
+    link.download = 'To-Do-List.exe';
     link.click();
-
 });
