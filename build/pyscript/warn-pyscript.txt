@@ -50,7 +50,6 @@ missing module named trove_classifiers - imported by setuptools.config._validate
 missing module named pyimod02_importers - imported by C:\Users\vicente\AppData\Local\Programs\Python\Python313\Lib\site-packages\PyInstaller\hooks\rthooks\pyi_rth_pkgutil.py (delayed)
 missing module named collections.Callable - imported by collections (optional), cffi.api (optional)
 missing module named collections.MutableMapping - imported by collections (conditional), bottle (conditional)
-missing module named plyer - imported by D:\Programacion\VSCode\Proyects\To-do-list\pyscript.py (top-level)
 missing module named 'cryptography.x509' - imported by webview (delayed)
 missing module named 'cryptography.hazmat' - imported by webview (delayed)
 missing module named cryptography - imported by webview (delayed)
