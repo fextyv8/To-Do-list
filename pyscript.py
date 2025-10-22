@@ -1,5 +1,5 @@
 import webview
-from player import notification
+from plyer import notification
 
 url_web = "https://fextyv8.github.io/To-Do-list"
 
